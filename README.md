@@ -29,3 +29,7 @@ Enter a grid size (n) for (n x n): 5
 ## Notes
 - Odd grid sizes work best, since the mirrored grid has a center column.
 - The hash has 256 bits, so grid sizes above 22 run out of bits.
+
+## Roadmap
+- Map pixels to a real image grid and output as a file
+- Add in color randomization
