@@ -5,7 +5,7 @@ def main():
     hash_result = hashlib.sha256(text.encode("utf-8")).digest()
     bit_string = "".join(f"{b:08b}" for b in hash_result)
 
-    grid_size = 5
+    grid_size = int(input("Enter a grid size (n) for (n x n): "))
     half_width = (grid_size + 1) // 2
     bit_slice = bit_string[:half_width * grid_size]
 
