@@ -10,9 +10,9 @@ def main():
     bit_slice = bit_string[:half_width * grid_size]
 
     rows = [list(bit_slice[i:i + half_width]) for i in range(0, half_width*grid_size, half_width)]
-    print(bit_slice)
     for row in rows:
         row += row[half_width - 2::-1]
+        print(f"{" ".join("■" if bit == "1" else " " for bit in row)}")
 
 if __name__ == "__main__":
     main()
